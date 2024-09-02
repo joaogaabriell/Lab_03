@@ -1,4 +1,4 @@
-/*
+
 package Map;
 
 public class BrincandoComAsFigurasGeometricas {
@@ -19,4 +19,4 @@ public class BrincandoComAsFigurasGeometricas {
         System.out.println(circulo.toString() + " tem perímetro de: " + circulo.calcularPerimetro());
     }
 }
-*/
+

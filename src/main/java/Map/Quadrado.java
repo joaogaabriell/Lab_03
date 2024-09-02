@@ -1,4 +1,4 @@
-/*
+
 package Map;
 
 public class Quadrado implements FiguraGeometrica {
@@ -24,4 +24,4 @@ public class Quadrado implements FiguraGeometrica {
     }
 }
 
-*/
+

@@ -1,4 +1,4 @@
-/*
+
 package Map;
 
 public class Retangulo implements FiguraGeometrica {
@@ -25,4 +25,4 @@ public class Retangulo implements FiguraGeometrica {
         return "Retângulo com altura: " + altura + " e largura: " + largura;
     }
 }
-*/
+

@@ -1,4 +1,4 @@
-/*
+
 package Map;
 
 public class Circulo implements FiguraGeometrica {
@@ -24,4 +24,4 @@ public class Circulo implements FiguraGeometrica {
     }
 }
 
-*/
+
