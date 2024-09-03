@@ -1,18 +1,18 @@
 package Map;
 
 public class Circulo implements FiguraGeometrica {
-    private int raio;
+    private double raio;
 
-    public Circulo(int raio) {
+    public Circulo(double raio) {
         if (raio <= 0) {
-            throw new IllegalArgumentException("O raio deve ser maior que zero.");
+            throw new IllegalArgumentException("O raio do círculo deve ser maior que zero.");
         }
         this.raio = raio;
     }
 
     @Override
     public double calcularArea() {
-        return Math.PI * raio * raio;
+        return Math.PI * Math.pow(raio, 2);
     }
 
     @Override
@@ -22,6 +22,11 @@ public class Circulo implements FiguraGeometrica {
 
     @Override
     public String descricao() {
-        return "Círculo com raio de tamanho: " + raio;
+        return String.format("Círculo com raio de tamanho: %.2f", raio);
+    }
+
+    // Getter opcional
+    public double getRaio() {
+        return raio;
     }
 }

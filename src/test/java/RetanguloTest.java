@@ -20,7 +20,7 @@ public class RetanguloTest {
     @Test
     public void testDescricao() {
         Retangulo retangulo = new Retangulo(10, 5);
-        assertEquals("Retângulo de altura: 10 e largura: 5", retangulo.descricao());
+        assertEquals("Retângulo com altura: 10 e largura: 5", retangulo.descricao());
     }
 
     @Test

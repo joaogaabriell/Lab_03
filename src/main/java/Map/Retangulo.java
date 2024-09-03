@@ -24,6 +24,6 @@ public class Retangulo implements FiguraGeometrica {
 
     @Override
     public String descricao() {
-        return "Retângulo de altura " + altura + " e largura " + largura;
+        return "Retângulo com altura: " + altura + " e largura: " + largura;
     }
 }

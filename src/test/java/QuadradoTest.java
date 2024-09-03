@@ -20,7 +20,7 @@ public class QuadradoTest {
     @Test
     public void testDescricao() {
         Quadrado quadrado = new Quadrado(7);
-        assertEquals("Quadrado com lado de tamanho: 7", quadrado.descricao());
+        assertEquals("Quadrado com lado: 7", quadrado.descricao());
     }
 
     @Test

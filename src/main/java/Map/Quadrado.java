@@ -22,6 +22,6 @@ public class Quadrado implements FiguraGeometrica {
 
     @Override
     public String descricao() {
-        return "Quadrado de lado " + lado;
+        return "Quadrado com lado: " + lado;
     }
 }
