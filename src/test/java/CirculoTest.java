@@ -20,7 +20,7 @@ public class CirculoTest {
     @Test
     public void testDescricao() {
         Circulo circulo = new Circulo(25);
-        assertEquals("Círculo com raio de tamanho: 25", circulo.descricao());
+        assertEquals("Círculo com raio de tamanho: 25,00", circulo.descricao());
     }
 
     @Test
@@ -28,6 +28,6 @@ public class CirculoTest {
         Exception exception = assertThrows(IllegalArgumentException.class, () -> {
             new Circulo(-25);
         });
-        assertEquals("O raio deve ser maior que zero.", exception.getMessage());
+        assertEquals("O raio do círculo deve ser maior que zero.", exception.getMessage());
     }
 }
