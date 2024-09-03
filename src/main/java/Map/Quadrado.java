@@ -1,10 +1,12 @@
-
 package Map;
 
 public class Quadrado implements FiguraGeometrica {
     private int lado;
 
     public Quadrado(int lado) {
+        if (lado <= 0) {
+            throw new IllegalArgumentException("O lado deve ser maior que zero.");
+        }
         this.lado = lado;
     }
 
@@ -19,9 +21,7 @@ public class Quadrado implements FiguraGeometrica {
     }
 
     @Override
-    public String toString() {
-        return "Quadrado com lados de tamanho: " + lado;
+    public String descricao() {
+        return "Quadrado de lado " + lado;
     }
 }
-
-

@@ -1,4 +1,3 @@
-
 package Map;
 
 public class Retangulo implements FiguraGeometrica {
@@ -6,6 +5,9 @@ public class Retangulo implements FiguraGeometrica {
     private int largura;
 
     public Retangulo(int altura, int largura) {
+        if (altura <= 0 || largura <= 0) {
+            throw new IllegalArgumentException("Altura e largura devem ser maiores que zero.");
+        }
         this.altura = altura;
         this.largura = largura;
     }
@@ -21,8 +23,7 @@ public class Retangulo implements FiguraGeometrica {
     }
 
     @Override
-    public String toString() {
-        return "Retângulo com altura: " + altura + " e largura: " + largura;
+    public String descricao() {
+        return "Retângulo de altura " + altura + " e largura " + largura;
     }
 }
-

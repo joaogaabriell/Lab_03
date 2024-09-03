@@ -1,10 +1,12 @@
-
 package Map;
 
 public class Circulo implements FiguraGeometrica {
     private int raio;
 
     public Circulo(int raio) {
+        if (raio <= 0) {
+            throw new IllegalArgumentException("O raio deve ser maior que zero.");
+        }
         this.raio = raio;
     }
 
@@ -19,9 +21,7 @@ public class Circulo implements FiguraGeometrica {
     }
 
     @Override
-    public String toString() {
+    public String descricao() {
         return "Círculo com raio de tamanho: " + raio;
     }
 }
-
-
