@@ -5,7 +5,7 @@ public class Main {
         try {
             FiguraGeometrica retangulo = new Retangulo(10, 5);
             FiguraGeometrica quadrado = new Quadrado(7);
-            FiguraGeometrica circulo = new Circulo(25);
+            FiguraGeometrica circulo = new Circulo(10);
 
             System.out.println(retangulo.descricao());
             System.out.println("Área: " + retangulo.calcularArea());

@@ -24,9 +24,4 @@ public class Circulo implements FiguraGeometrica {
     public String descricao() {
         return String.format("Círculo com raio de tamanho: %.2f", raio);
     }
-
-    // Getter opcional
-    public double getRaio() {
-        return raio;
-    }
 }
