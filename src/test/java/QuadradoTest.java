@@ -8,19 +8,19 @@ public class QuadradoTest {
     @Test
     public void testCalcularArea() {
         Quadrado quadrado = new Quadrado(7);
-        assertEquals(49, quadrado.calcularArea());
+        assertEquals(49.0, quadrado.calcularArea(), 0.0001);
     }
 
     @Test
     public void testCalcularPerimetro() {
         Quadrado quadrado = new Quadrado(7);
-        assertEquals(28, quadrado.calcularPerimetro());
+        assertEquals(28.0, quadrado.calcularPerimetro(), 0.0001);
     }
 
     @Test
     public void testDescricao() {
         Quadrado quadrado = new Quadrado(7);
-        assertEquals("Quadrado com lado: 7", quadrado.descricao());
+        assertEquals("Quadrado com lado: 7,00", quadrado.descricao());
     }
 
     @Test
