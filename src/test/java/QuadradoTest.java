@@ -1,0 +1,33 @@
+package Map;
+
+import org.junit.jupiter.api.Test;
+import static org.junit.jupiter.api.Assertions.*;
+
+public class QuadradoTest {
+
+    @Test
+    public void testCalcularArea() {
+        Quadrado quadrado = new Quadrado(7);
+        assertEquals(49.0, quadrado.calcularArea(), 0.0001);
+    }
+
+    @Test
+    public void testCalcularPerimetro() {
+        Quadrado quadrado = new Quadrado(7);
+        assertEquals(28.0, quadrado.calcularPerimetro(), 0.0001);
+    }
+
+    @Test
+    public void testDescricao() {
+        Quadrado quadrado = new Quadrado(7);
+        assertEquals("Quadrado com lado: 7,00", quadrado.descricao());
+    }
+
+    @Test
+    public void testInvalidInput() {
+        Exception exception = assertThrows(IllegalArgumentException.class, () -> {
+            new Quadrado(-7);
+        });
+        assertEquals("O lado deve ser maior que zero.", exception.getMessage());
+    }
+}
