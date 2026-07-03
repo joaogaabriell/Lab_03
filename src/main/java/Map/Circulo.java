@@ -1,7 +1,9 @@
 package Map;
 
+import java.util.Locale;
+
 public class Circulo implements FiguraGeometrica {
-    private double raio;
+    private final double raio;
 
     public Circulo(double raio) {
         if (raio <= 0) {
@@ -12,7 +14,7 @@ public class Circulo implements FiguraGeometrica {
 
     @Override
     public double calcularArea() {
-        return Math.PI * Math.pow(raio, 2);
+        return Math.PI * raio * raio;
     }
 
     @Override
@@ -22,6 +24,6 @@ public class Circulo implements FiguraGeometrica {
 
     @Override
     public String descricao() {
-        return String.format("Círculo com raio de tamanho: %.2f", raio);
+        return String.format(Locale.forLanguageTag("pt-BR"), "Círculo com raio de tamanho: %.2f", raio);
     }
 }

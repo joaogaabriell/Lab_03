@@ -1,9 +1,11 @@
 package Map;
 
-public class Quadrado implements FiguraGeometrica {
-    private int lado;
+import java.util.Locale;
 
-    public Quadrado(int lado) {
+public class Quadrado implements FiguraGeometrica {
+    private final double lado;
+
+    public Quadrado(double lado) {
         if (lado <= 0) {
             throw new IllegalArgumentException("O lado deve ser maior que zero.");
         }
@@ -22,6 +24,6 @@ public class Quadrado implements FiguraGeometrica {
 
     @Override
     public String descricao() {
-        return "Quadrado com lado: " + lado;
+        return String.format(Locale.forLanguageTag("pt-BR"), "Quadrado com lado: %.2f", lado);
     }
 }
